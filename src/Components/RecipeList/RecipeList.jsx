@@ -23,11 +23,8 @@ const RecipeList = () => {
       {list.map((items) => {
         const { image, id, title } = items;
         return (
-          <Link to={"/recipe/" + id}>
-            <div
-              key={id}
-              className="shadow-lg h-[17rem] rounded-xl hover:scale-110 hover:bg-[#FFF3E8] flex flex-col "
-            >
+          <Link key={id} to={"/recipe/" + id}>
+            <div className="shadow-lg h-[17rem] rounded-xl hover:scale-110 hover:bg-[#FFF3E8] flex flex-col ">
               <img
                 src={image}
                 alt="dish"

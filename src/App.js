@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Cuisine from "./Pages/Cuisine/Cuisine";
 import Error from "./Pages/Error/Error";
 import ShowNavbar from "./Components/ShowNavbar/ShowNavbar";
+import SearchedRecipe from "./Pages/SearchedRecipe/SearchedRecipe";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -15,8 +16,9 @@ function App() {
         {/* </ShowNavbar> */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="cuisine/:type" element={<Cuisine />} />
+          <Route path="/cuisine/:type" element={<Cuisine />} />
           <Route path="/recipe/:name" element={<RecipeDetailsPage />} />
+          <Route path="/searched/:search" element={<SearchedRecipe />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>

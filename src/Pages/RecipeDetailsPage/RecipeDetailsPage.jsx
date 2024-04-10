@@ -20,7 +20,7 @@ const RecipeDetailsPage = () => {
     fetchDetails();
   }, [params.name]);
   return (
-    <div className="recipeDetails py-28 px-10 flex flex-col items-center bg-[#FFF4E8] gap-8">
+    <div className="recipeDetails py-28 px-10 flex flex-col  items-center bg-[#FFF4E8] gap-8">
       <div className="recipeHeader items-center flex flex-col gap-5">
         <p className="text-xl font-medium">{detail.title}</p>
         <div className="flex w-full justify-around">
@@ -47,8 +47,8 @@ const RecipeDetailsPage = () => {
           dangerouslySetInnerHTML={{ __html: detail.summary }}
         ></p>
       </div>
-      <div className="recipeProcIng w-full flex gap-6">
-        <div className="recipeProcedure w-1/2">
+      <div className="recipeProcIng w-full flex-col sm:flex-row flex gap-6">
+        <div className="recipeProcedure w-full sm:w-1/2">
           <p className="text-2xl my-2 font-medium">Procedure</p>
           <p
             className="text-sm leading-7"
