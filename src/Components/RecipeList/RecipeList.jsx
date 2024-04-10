@@ -30,7 +30,7 @@ const RecipeList = () => {
             >
               <img
                 src={image}
-                alt="dish-Image"
+                alt="dish"
                 className="w-full h-48 rounded-t-xl "
               />
               <p className="px-6 py-4">{title}</p>

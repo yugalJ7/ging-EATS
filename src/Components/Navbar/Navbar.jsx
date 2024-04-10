@@ -1,4 +1,4 @@
-import { NavLink, Link, BrowserRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Category from "../Category/Category";
 import SearchIcon from "@mui/icons-material/Search";
 
