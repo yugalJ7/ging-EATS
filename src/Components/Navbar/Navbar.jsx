@@ -4,7 +4,7 @@ import SearchIcon from "@mui/icons-material/Search";
 
 const Navbar = () => {
   return (
-    <div className="navbar flex justify-around p-2">
+    <div className="navbar flex justify-around p-2 fixed top-1 w-full bg-[#FFDDBB] rounded-full">
       <div className="navbarLeft flex  items-center w-1/6 justify-center">
         <img
           src="assets/website-logo.png"

@@ -6,7 +6,7 @@ const RecipeList = () => {
   const [list, setList] = useState([]);
 
   useEffect(() => {
-    // fetchRecipeList();
+    fetchRecipeList();
   }, []);
 
   const fetchRecipeList = async () => {
@@ -19,14 +19,21 @@ const RecipeList = () => {
   };
 
   return (
-    <div className="">
+    <div className="grid grid-cols-1 grid-rows-auto gap-6 md:grid-cols-3 sm:grid-cols-2 w-3/4 ease-out ">
       {list.map((items) => {
         const { image, id, title } = items;
         return (
           <Link to={"/recipe/" + id}>
-            <div key={id} className="shadow-lg">
-              <img src={image} alt="" className="w-16 h-16" />
-              <p>{title}</p>
+            <div
+              key={id}
+              className="shadow-lg h-[17rem] rounded-xl hover:scale-110 hover:bg-[#FFF3E8] flex flex-col "
+            >
+              <img
+                src={image}
+                alt="dish-Image"
+                className="w-full h-48 rounded-t-xl "
+              />
+              <p className="px-6 py-4">{title}</p>
             </div>
           </Link>
         );
