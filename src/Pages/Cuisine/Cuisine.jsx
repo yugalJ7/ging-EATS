@@ -9,7 +9,7 @@ const Cuisine = () => {
 
   const getCuisine = async (type) => {
     const data = await fetch(
-      `${url}complexSearch?apiKey=${process.env.REACT_APP_RECIPE_API_KEY_TWO}&cuisine=${type}`
+      `${url}complexSearch?apiKey=f1dc4edfb1084f1f8f60009775e1cbaa&cuisine=${type}`
     );
     const fetchData = await data.json();
     console.log(fetchData.results);

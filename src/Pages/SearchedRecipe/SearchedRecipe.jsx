@@ -8,7 +8,7 @@ const SearchedRecipe = () => {
 
   const getSearch = async (name) => {
     const data = await fetch(
-      `${url}complexSearch?apiKey=${process.env.REACT_APP_RECIPE_API_KEY_TWO}&query=${name}`
+      `${url}complexSearch?apiKey=f1dc4edfb1084f1f8f60009775e1cbaa&query=${name}`
     );
     const searchData = await data.json();
     console.log(searchData);

@@ -10,7 +10,7 @@ const RecipeDetailsPage = () => {
 
   const fetchDetails = async () => {
     const data = await fetch(
-      `${url}${params.name}/information?apiKey=${process.env.REACT_APP_RECIPE_API_KEY_TWO}`
+      `${url}${params.name}/information?apiKey=f1dc4edfb1084f1f8f60009775e1cbaa`
     );
     const detailsData = await data.json();
     console.log(detailsData);
