@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const url = "https://api.spoonacular.com/recipes/";
 const Cuisine = () => {
@@ -21,10 +21,12 @@ const Cuisine = () => {
       <p>Cuisin</p>
       {cuisine.map((items) => {
         return (
-          <div key={items.id}>
-            <img src={items.image} alt={items.title} />
-            <p>{items.title}</p>
-          </div>
+          <Link to={"/recipe/" + items.id}>
+            <div key={items.id}>
+              <img src={items.image} alt={items.title} />
+              <p>{items.title}</p>
+            </div>
+          </Link>
         );
       })}
     </div>

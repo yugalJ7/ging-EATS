@@ -16,7 +16,7 @@ const RecipeDetailsPage = () => {
     setDetails(detailsData);
   };
   useEffect(() => {
-    // fetchDetails();
+    fetchDetails();
   }, [params.name]);
   return (
     <div>
