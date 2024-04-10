@@ -7,7 +7,7 @@ const Cuisine = () => {
   const params = useParams();
   const getCuisine = async (type) => {
     const data = await fetch(
-      `${url}complexSearch?apiKey=${process.env.REACT_APP_RECIPE_API_KEY}&cuisine=${type}`
+      `${url}complexSearch?apiKey=${process.env.REACT_APP_RECIPE_API_KEY_TWO}&cuisine=${type}`
     );
     const fetchData = await data.json();
     console.log(fetchData.results);
@@ -18,7 +18,7 @@ const Cuisine = () => {
   }, [params.type]);
   return (
     <div className="mt-28 flex flex-col items-center gap-5">
-      <p>{params.type}</p>
+      <p className="text-3xl font-medium">{params.type}</p>
       <div className="grid grid-cols-1 grid-rows-auto gap-6 md:grid-cols-3 sm:grid-cols-2 w-3/4 ease-out ">
         {cuisine.map((items) => {
           return (

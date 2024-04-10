@@ -11,7 +11,7 @@ const RecipeList = () => {
 
   const fetchRecipeList = async () => {
     const api = await fetch(
-      `${url}?apiKey=${process.env.REACT_APP_RECIPE_API_KEY}&number=30`
+      `${url}?apiKey=${process.env.REACT_APP_RECIPE_API_KEY_TWO}&number=30`
     );
     const data = await api.json();
     setList(data.recipes);

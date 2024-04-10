@@ -1,13 +1,13 @@
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, BrowserRouter } from "react-router-dom";
 import Category from "../Category/Category";
 import SearchIcon from "@mui/icons-material/Search";
 
 const Navbar = () => {
   return (
-    <div className="navbar flex justify-around p-2 fixed top-1 w-full bg-[#FFDDBB] rounded-full">
+    <div className="navbar flex justify-around p-2 fixed top-1 w-full bg-[#FFDDBB] rounded-full z-30">
       <div className="navbarLeft flex  items-center w-1/6 justify-center">
         <img
-          src="assets/website-logo.png"
+          src="/assets/website-logo.png"
           alt="recipe-icon"
           className="w-12 h-12 ml-9"
         />
