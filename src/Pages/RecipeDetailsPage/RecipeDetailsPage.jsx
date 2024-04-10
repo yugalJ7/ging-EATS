@@ -6,7 +6,7 @@ import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAlt
 const url = "https://api.spoonacular.com/recipes/";
 const RecipeDetailsPage = () => {
   const [detail, setDetails] = useState({});
-  let params = useParams();
+  const params = useParams();
 
   const fetchDetails = async () => {
     const data = await fetch(
